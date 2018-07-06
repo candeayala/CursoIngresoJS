@@ -1,12 +1,12 @@
 
 function mostrar()
 {
-	var ancho;
 	var largo;
+	var ancho;
 	var perimetro;
-	ancho= prompt("ingrese ancho");
 	largo= prompt("ingrese largo");
-	perimetro= ancho*2 + largo*2;
+	ancho= prompt("ingrese ancho");
+	perimetro= largo*2 + ancho*2;
 	alert(perimetro);
-}
+
 }

@@ -1,20 +1,24 @@
 function mostrar()
 {
 	var numero;
+	var contador;
+	var acumulador;
+
 	numero=prompt("ingrese numero");
 	numero=parseInt(numero);
-	var contador;
-	var acumuladorPares=0;
+
 	for (contador=1;contador<numero;contador++)
 	{	
-		if(numero%2==0)
+		acumulador=contador%2;
+
+		if(acumulador==0)
 		{
-			acumuladorPares++;
+			console.log("la cantidad de pares es :"+ contador);	
 		}	
 
 	}
 		
-	console.log("la cantidad de pares es :"+acumuladorPares);	
+	
 
 
 

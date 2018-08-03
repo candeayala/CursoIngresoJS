@@ -3,7 +3,7 @@ function mostrar()
 	var num1;
 	var num2;
 	var suma;
-	var resta;
+	var division;
 	num1= parseInt(prompt("ingrese numero"));
 	num2= parseInt(prompt("ingrese otro numero"));
 
@@ -14,21 +14,22 @@ function mostrar()
 
 	else if (num1>num2) 
 	{
-		resta= num1-num2;
-		alert(resta);
+		division= num1/num2;
+		alert(division);
 	}
 
 	else 
 	{
 		suma= num1 + num2;
-		alert(suma);
 
-		if (suma>10) 
+		if (suma<50) 
 		{
-			alert("la suma es " + suma + " y superó el 10");
+			alert("la suma es " + suma + " y es menor a 50");
+		}	
+		else
+		{
+			alert(suma);
 		}
-
-		
 	}
-
+	
 }
